@@ -22,7 +22,7 @@ const Hero = () => {
               </div>
             </div>
             <div className="basis-1/2 flex justify-end">
-              <img src="![](/img/hero.png)" alt="" />
+              <img src="../img/hero.png" alt="" />
             </div>
           </div>
           <div className="flex w-full gap-4 overflow-x-scroll py-5 px-4 hide-scroll">
