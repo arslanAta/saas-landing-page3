@@ -14,6 +14,19 @@
 
 <body>
   <div id="root"></div>
+  <script>
+
+    const baseURL = 'https://arslanAta.github.io/saas-landing-page3/';
+
+    window.addEventListener('load', () => {
+      const images = document.querySelectorAll('img');
+      images.forEach((img) => {
+        if (!img.src.startsWith('http') && !img.src.startsWith(baseURL)) {
+          img.src = baseURL + img.getAttribute('src');
+        }
+      });
+    });
+  </script>
   <script type="module" src="/src/main.tsx"></script>
 </body>
 
